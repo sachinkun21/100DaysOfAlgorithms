@@ -1,6 +1,7 @@
+# Solutions
 
-
-
+# time : O(n2)
+# space: O(1)
 def find_pair_brute(list_num, num):
     for i in range(len(list_num)):
         for j in range(i, len(list_num)):
@@ -9,7 +10,8 @@ def find_pair_brute(list_num, num):
                 return True
     return False
 
-
+# time : O(n)
+# space: O(n)
 def find_pair_hash(list_num, num):
     dict_of_num = {}
     for i in list_num:
@@ -20,7 +22,8 @@ def find_pair_hash(list_num, num):
             dict_of_num[i]= True
     return False
 
-
+# time : O(nlogn)
+# space: O(1)
 def find_pair_sort(list_num, num):
     list_num.sort()
     left_ptr = 0
